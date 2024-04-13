@@ -44,9 +44,23 @@ ul li {
     width: 450px;
     height: 100px;
     background-color: #7cb6c9;
-    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 
 
+}
+
+.screen {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+}
+
+.screen-left {
+    font-size: 0.7em;
 }
 
 .row {
@@ -54,8 +68,9 @@ ul li {
     justify-content: space-around;
 }
 
-.row>p {
+button {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
     width: 90px;
     height: 90px;
     padding: 25px;
@@ -63,6 +78,25 @@ ul li {
     font-weight: bold;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+button:active {
+    background-color: rgb(56, 133, 143);
+    box-shadow: 0 5px gray;
+    transform: translateY(2px);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.enabled {
+    opacity: 1.0;
+    cursor: auto;
+    pointer-events: all;
 }
 
 .num {
